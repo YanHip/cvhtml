@@ -22,6 +22,9 @@ h6 {
 h2 {
   font-size: 2rem;
 }
+h3 {
+  font-size: 1.75rem;
+}
 h6 {
   font-size: 1rem;
 }
@@ -35,6 +38,9 @@ a {
   background-color: transparent;
 }
 
+.app_container {
+  padding: 3px;
+}
 .row {
   width: 100%;
   margin: auto;
@@ -48,6 +54,7 @@ a {
 .row_info_g {
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .row_info_g_item {
   justify-content: flex-start;
@@ -56,6 +63,10 @@ a {
 .justify-content-center {
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.profil_img{
+  flex-direction: row-reverse!important;
 }
 
 .col {
@@ -64,48 +75,46 @@ a {
   display: flex;
   flex-direction: column;
 }
+.col_info_g {
+  width: 33%;
+}
 .medium_line {
   /* margin-top: 1%!important;
     margin-left: 1%!important; */
   width: 100%;
-  padding: 3px 3%;
+  padding: 3px 8px;
 }
 .title {
   border-bottom: solid #287eed 2px;
-  width: 95%;
 }
 .exp_and_comp {
-  margin: 0px !important;
+  margin: 0px;
   width: 100%;
-  display: inline-block !important;
+  display: inline-block;
 }
 .subtitle {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 27%;
+}
+.subtitle strong {
+  text-align: center;
 }
 .row_block {
-  margin-bottom: 15px !important;
+  margin-bottom: 15px;
 }
-.subtitle {
-  max-width: 27% !important;
-  justify-content: flex-start;
+.experience_description {
+  max-width: 73%;
 }
 .competence {
-  min-width: 12.5% !important;
-  max-width: 12.5% !important;
+  width: 190px;
+  padding: 7px 0px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.padd {
-  /* padding-left: 2%; */
-}
-.icon {
-  /* width: 7%; */
-}
-
-@media screen and (max-width: 576px) {
-  .container-sm {
-    margin-left: 6% !important;
-  }
+.stars {
+	width: 10%;
 }
